@@ -1,0 +1,37 @@
+* {
+  text-align: center;
+}
+
+h3 {
+  float: right;
+  text-align: center;
+}
+
+div {
+  border: 2px solid black;
+}
+
+.about_move_me {
+  position: relative;
+  right: 700px;
+}
+
+.testimony_move_me {
+  position: relative;
+  right: 600px;
+}
+
+.the_science_move_me {
+  position: relative;
+  right: 500px;
+}
+
+.resources_move_me {
+  position: relative;
+  right: 400px;
+}
+
+.contact_me_move_me {
+  position: relative;
+  right: 300px;
+}

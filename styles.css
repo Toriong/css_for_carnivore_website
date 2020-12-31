@@ -1,4 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  text-emphasis-color: grey;
+  font-family: "Lato", sans-serif;
+}
+
+#nav_bar_text_style {
+  font-family: "Lato", sans-serif;
+}
+
+.meat_in_center {
+  text-align: center;
+}
+
+body {
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -7,31 +28,86 @@ h3 {
   text-align: center;
 }
 
+h1 {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: grey;
+}
+
 div {
-  border: 2px solid black;
+  border: 1px solid white;
 }
 
-.about_move_me {
-  position: relative;
-  right: 700px;
+/* #intro_background_color { */
+/* background-color: grey; */
+/* } */
+
+a {
+  display: inline;
+  font-weight: lighter;
+  text-decoration: none;
 }
 
-.testimony_move_me {
-  position: relative;
-  right: 600px;
+h2 {
+  text-align: center;
 }
 
-.the_science_move_me {
-  position: relative;
-  right: 500px;
+#meat_margins_set {
+  margin: 25px;
 }
 
-.resources_move_me {
+/* #move_meat_logo_ {text-align: left;} */
+
+#about_move_me {
   position: relative;
-  right: 400px;
+  right: 20px;
 }
 
-.contact_me_move_me {
+.welcome_meat_eaters_move {
+  text-align: center;
+}
+#testimonies_move_me {
   position: relative;
-  right: 300px;
+  left: 20px;
+}
+
+/* #sizing_intro_greeting {height: 100px;} */
+
+/* #the_science_move_me {position: relative;right: 125px;} */
+
+#resources_move_me {
+  position: relative;
+  left: 40px;
+}
+
+#contact_move_me {
+  position: relative;
+  left: 55px;
+}
+
+.intro_meat_picture {
+  background: url(./images_for_project2/pexels-photo-1327344.jpeg);
+  background-size: cover;
+}
+
+#size_intro_meat_picture {
+  height: 700px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.about_color {
+  color-adjust: black;
+}
+
+a {
+  color: grey;
+}
+
+.size_navbar {
+  margin-bottom: 45px;
+  margin-top: 15px;
 }

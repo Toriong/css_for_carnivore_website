@@ -21,6 +21,8 @@
 body {
   box-sizing: border-box;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 h3 {
@@ -33,10 +35,6 @@ h1 {
   margin: 0;
   font-family: "Lato", sans-serif;
   color: grey;
-}
-
-div {
-  border: 1px solid white;
 }
 
 /* #intro_background_color { */
@@ -87,8 +85,27 @@ h2 {
 }
 
 .intro_meat_picture {
-  background: url(./images_for_project2/pexels-photo-1327344.jpeg);
-  background-size: cover;
+  width: 700px;
+  height: 400px;
+  background-image: url(./images_for_project2/sliding_image1.jpg);
+  margin: 100px auto;
+  background-repeat: no-repeat;
+  animation: meat_slide 20s infinite;
+}
+
+@keyframes meat_slide {
+  25% {
+    background-image: url(./images_for_project2/sliding_image4.jpg);
+  }
+  50% {
+    background-image: url(./images_for_project2/sliding_image3.jpg);
+  }
+  75% {
+    background-image: url(./images_for_project2/sliding_image2.jpg);
+  }
+  100% {
+    background-image: url(./images_for_project2/sliding_image1.jpg);
+  }
 }
 
 #size_intro_meat_picture {
@@ -110,4 +127,39 @@ a {
 .size_navbar {
   margin-bottom: 45px;
   margin-top: 15px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.headers_font_weight {
+  font-size: 50px;
+}
+
+#border_box_edit_for_about {
+  margin: 100px auto;
+}
+
+.description_margin {
+  margin: 20px 150px;
+}
+
+.info_div_border_about {
+  border-top: 4px double;
+  border-bottom: 4px double;
+  padding: 40px;
+  margin: 20px;
+}
+
+.border_the_science {
+  border-bottom: 4px double;
+  padding: 40px;
+  margin: 20px;
+}
+
+.border_testimonies {
+  border-bottom: 4px double;
+  padding: 40px;
+  margin: 20px;
 }

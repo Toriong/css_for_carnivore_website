@@ -2,6 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 
+:root {
+  --text-color: blue;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -23,6 +27,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  color: grey;
 }
 
 h3 {
@@ -41,11 +46,16 @@ h1 {
 /* background-color: grey; */
 /* } */
 
-a {
+.links {
   display: inline;
   font-weight: lighter;
   text-decoration: none;
+  color: grey;
 }
+
+/* #testimonials{
+    text-decoration: ;
+} */
 
 h2 {
   text-align: center;
@@ -65,7 +75,7 @@ h2 {
 .welcome_meat_eaters_move {
   text-align: center;
 }
-#testimonies_move_me {
+#testimonials_move_me {
   position: relative;
   left: 20px;
 }
@@ -120,17 +130,13 @@ ul {
   color-adjust: black;
 }
 
-a {
-  color: grey;
-}
-
 .size_navbar {
   margin-bottom: 45px;
   margin-top: 15px;
 }
 
 p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .headers_font_weight {
@@ -158,8 +164,201 @@ p {
   margin: 20px;
 }
 
-.border_testimonies {
+.border_testimonials {
   border-bottom: 4px double;
   padding: 40px;
   margin: 20px;
+}
+
+.baker_book_image_position {
+  position: relative;
+  left: 20px;
+  float: left;
+}
+
+.txt_baker {
+  font-size: 30px;
+  position: relative;
+  left: 30px;
+  margin-right: 50px;
+  top: 5px;
+}
+
+.baker_buy_book_button {
+  margin-top: 100px;
+  background-color: lightskyblue;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.saldino_image_position {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  float: left;
+}
+
+.txt_saldino {
+  font-size: 30px;
+  position: relative;
+  left: 30px;
+  margin-right: 50px;
+  top: 20px;
+}
+
+.saldino_buy_book_button {
+  margin-top: 100px;
+  background-color: lightskyblue;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+/* .border_me {
+  border: pink solid 2px;
+  height: 800px;
+} */
+
+.cho_image_position {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  float: left;
+}
+
+.txt_cho {
+  font-size: 30px;
+  position: relative;
+  left: 30px;
+  margin-right: 50px;
+  top: 20px;
+}
+
+.cho_buy_book_button {
+  margin-top: 100px;
+  background-color: lightskyblue;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.contact_us {
+  margin: auto;
+  text-align: center;
+}
+
+.move_your_name {
+  position: relative;
+  left: 20px;
+  float: left;
+  top: 5px;
+}
+
+.name_placeholder_text_size {
+  font-size: 50px;
+}
+
+.name_input {
+  position: relative;
+  left: 20px;
+  bottom: 2px;
+  float: left;
+}
+
+.email_placeholder_text_size {
+  font-size: 50px;
+}
+
+.email_input {
+  position: relative;
+  bottom: 83px;
+  right: 10px;
+}
+
+.move_email {
+  position: relative;
+  bottom: 52px;
+  right: 438px;
+  /* margin-bottom: 2px; */
+}
+
+.move_me_phone {
+  position: relative;
+  float: right;
+  right: 425px;
+  bottom: 178px;
+  /* margin-bottom: 2px; */
+}
+
+.phone_placeholder_text_size {
+  font-size: 50px;
+}
+
+.phone_input {
+  position: relative;
+  float: right;
+  left: 25px;
+  bottom: 147.4px;
+}
+
+.move_me_topic_of_your_email {
+  position: relative;
+  bottom: 45px;
+  left: 113px;
+  margin-bottom: 2px;
+}
+
+.topic_font_size {
+  font-size: 50px;
+}
+
+.topic_input {
+  position: relative;
+  bottom: 40px;
+  left: 260px;
+}
+
+.move_me_message {
+  position: relative;
+  right: 510px;
+  bottom: 10px;
+}
+
+.message_text_size {
+  font-size: 20px;
+}
+
+.submit_ {
+  font-size: 50px;
+  color: white;
+  background: green;
+  padding: 10px 10px;
+}
+
+#testimony_pictures {
+  width: 700px;
+  height: 500px;
+  overflow: hidden;
+  background: url(./carnivore_transformation/picture1.jpg);
+  text-align: center;
+  margin: auto;
+  background-repeat: no-repeat;
+  animation: carnivore_transformation 20s infinite;
+  margin-top: 20px;
+}
+
+@keyframes carnivore_transformation {
+  25% {
+    background-image: url(./carnivore_transformation/picture4.jpg);
+  }
+  50% {
+    background-image: url(./carnivore_transformation/picture3.jpg);
+  }
+  75% {
+    background-image: url(./carnivore_transformation/picture2.jpg);
+  }
+  100% {
+    background-image: url(./carnivore_transformation/picture1.jpg);
+  }
 }

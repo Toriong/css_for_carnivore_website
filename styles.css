@@ -3,13 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 
 :root {
-  --text-color: blue;
+  --text_color_blue: blue;
 }
 
 * {
   padding: 0;
   margin: 0;
-  box-sizing: inherit;
+  /* box-sizing: inherit; */
   text-emphasis-color: grey;
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
@@ -22,7 +22,10 @@
 .meat_in_center {
   text-align: center;
 }
-
+a {
+  color: var(--text_color_blue);
+  /* text-decoration: var(--varNone); */
+}
 body {
   box-sizing: border-box;
   text-align: center;
@@ -32,7 +35,9 @@ body {
   width: 100%;
   height: 100%;
 }
-
+p {
+  font-size: 12px;
+}
 h3 {
   float: right;
   text-align: center;
@@ -43,6 +48,8 @@ h1 {
   margin: 0;
   font-family: "Lato", sans-serif;
   color: grey;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 /* #intro_background_color { */
@@ -366,45 +373,394 @@ p {
   }
 }
 
-.testimonies_pic_area {
-  width: 1000;
-  height: 1000;
-  border: black solid 2px;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.testimonies_pic_container {
-  width: 350px;
-  height: 350px;
-  justify-content: center;
-  align-items: center;
+.pic_section {
+  width: 100%;
+  height: 100%;
   display: flex;
-  margin: 50px;
-  position: relative;
+  justify-content: space-around;
+  /* border: black 2px solid; */
 }
 
-.testimonies_pic_container img {
+.image_container {
+  display: flex;
   width: 350px;
   height: 350px;
-  transition: 0.5s ease-in-out;
-  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.6);
-  z-index: 1;
-  /* opacity: 1; */
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  margin: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  /* border: rgba(0, 0, 0, 0.6) solid 2px; */
+  transition: 0.6s ease-in-out;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  /* border: rgba(0, 0, 0, 0.6) solid 2px; */
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s ease-in-out;
 }
 
 .description {
   position: absolute;
+  color: white;
+  font-weight: bolder;
+  font-size: 12px;
+  /* border: black 2px solid; */
+  width: 100%;
+  height: 100%;
   display: flex;
-  transform: translateY(0);
-  top: 0;
-  right: 0;
-  font-weight: 900px bolder;
-  color: pink;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 0.8s ease-in-out;
+  opacity: 0;
 }
 
-.testimonies_pic_container img:hover {
-  transform: translateY(35px);
+.image_container:hover {
+  transform: translateY(25px);
+  transition: 0.3s ease-in-out;
+}
+
+.image_container:hover .description {
+  transform: translateY(-30px);
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.image_container:hover .overlay {
+  background: linear-gradient(to top, #000, transparent);
+  transition: 0.3s ease-in-out;
+}
+
+.image_container_raymond {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease-in-out;
+  width: 350px;
+  height: 350px;
+}
+
+.image_container_raymond img {
+  width: 350px;
+  height: 350px;
+}
+
+.overlay_raymond {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* border: black solid 2px; */
+}
+
+.description_raymond {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 70%;
+  align-items: flex-end;
+  display: flex;
+  bottom: 0;
+  opacity: 0;
+  color: white;
+  font-weight: bolder;
+  font-size: 12px;
+  transition: ease-in-out 0.8s;
+}
+
+.image_container_raymond:hover {
+  transform: translateY(25px);
+  transition: 0.3s ease-in-out;
+}
+
+.image_container_raymond:hover .overlay_raymond {
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.image_container_raymond:hover .description_raymond {
+  transform: translateY(-30px);
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.image_container_chad img {
+  width: 350px;
+  height: 350px;
+}
+
+.image_container_chad {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.overlay_chad {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.description_chad {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  /* border: solid 2px black; */
+  display: flex;
+  color: white;
+  font-weight: bolder;
+  font-size: 12px;
+  bottom: 0;
+  align-items: flex-end;
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+
+.image_container_chad:hover {
+  transform: translateY(25px);
+  transition: 0.3s ease-in-out;
+}
+
+.image_container_chad:hover .overlay_chad {
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.image_container_chad:hover .description_chad {
+  transform: translateY(-30px);
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.image_container_jason img {
+  width: 350px;
+  height: 350px;
+}
+
+.image_container_jason {
+  width: 350px;
+  height: 350px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 50px;
+  transition: ease-in-out 0.8s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  /* opacity: 1; */
+}
+
+.overlay_jason {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.description_jason {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  bottom: 0px;
+  color: white;
+  font-weight: bolder;
+  font-size: 12px;
+  transition: 0.8s ease-in-out;
+  opacity: 0;
+}
+
+.image_container_jason:hover {
+  transform: translateY(25px);
+  transition: 0.3s ease-in-out;
+}
+
+.image_container_jason:hover .overlay_jason {
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.image_container_jason:hover .description_jason {
+  opacity: 1;
+  transform: translateY(-30px);
+  transition: ease-in-out 0.3s;
+}
+
+.image_container_adrian img {
+  width: 350px;
+  height: 350px;
+}
+
+.image_container_adrian {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.8s ease-in-out;
+}
+
+.overlay_adrian {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  /* border: pink solid 2px; */
+}
+
+.description_adrian {
+  position: absolute;
+  color: white;
+  font-weight: bolder;
+  font-size: 12px;
+  display: flex;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.8s ease-out;
+}
+
+.image_container_adrian:hover {
+  transform: translateY(25px);
+  transition: 0.3s ease-in-out;
+}
+
+.image_container_adrian:hover .overlay_adrian {
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.image_container_adrian:hover .description_adrian {
+  transform: translateY(-30px);
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.image_container_brett img {
+  width: 350px;
+  height: 350px;
+}
+
+/* ask Ilya why margin: 50 aligns this div with the other divs, its seems that display:
+flex, justify-content: center, and align-items: center are not doing anything? */
+.image_container_brett {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  transition: ease-out 0.8s;
+}
+
+.description_brett {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  font-weight: bolder;
+  font-size: 12px;
+  opacity: 0;
+}
+
+.overlay_brett {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  /* border: pink solid 2px; */
+}
+
+.image_container_brett:hover {
+  transform: translateY(25px);
   transition: 0.3s ease-out;
+}
+
+.image_container_brett:hover .overlay_brett {
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.image_container_brett:hover .description_brett {
+  transform: translateY(-30px);
+  opacity: 1;
+  transition: ease-in-out 0.3s;
+}
+
+.meatrx_relative {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  border-top: solid 2px grey;
+}
+.meatrx_link_section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+  font-size: 12px;
+  /* text-decoration: none; */
+}
+
+.meatrx_link_section a {
+  color: blue;
+}
+
+.the_science_container {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  /* border: solid 2px black; */
+}
+.the_science {
+  position: absolute;
+  width: 50%;
+  height: 800px;
+  /* border: solid 2px pink; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+:root {
+  --varText_Color: grey;
+  --varAll_Caps: uppercase;
+  --varNone: none;
+  --varfont_size: 25px;
+  --varheading_size: 40px;
+  --varDecorations: underline;
+}
+
+.scholarly_list a {
+  color: var(--varText_Color);
+  text-decoration: var(--varNone);
+  text-emphasis-style: var(--varAll_Caps);
+}
+
+.scholarly_list li {
+  font-size: var(--varfont_size);
+}
+
+.the_science_container p {
+  font-size: var(--varheading_size);
+  text-decoration: var(--varDecorations);
+}
+
+ol {
+  text-align: center;
+  list-style-position: inside;
 }
